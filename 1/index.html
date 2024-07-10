@@ -1,11 +1,23 @@
 <html lang="uk-UA">
 <head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Годинник - Sky: Діти Світла</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/favicon.ico">
 <meta name="description" content="«Годинник - Sky: Діти Світла» Програма, яка дозволяє відстежувати подію в грі. Ця програма не пов'язана з грою.">
 <meta name="keywords" content="Годинник - Sky: Діти Світла">
 <style>
+
+.super1 {
+  position: absolute;
+  z-index:  100;
+  top:      8px;
+  
+  width:    50px;
+  height:   50px;
+  
+  background: rgba(0, 0, 255, 0.5);
+}
 
 #ifua {
     position: absolute;
@@ -97,10 +109,9 @@
 <p>
 Якщо ви вирішили тут отримувати повідомлення:<br>
 • Потрібно увімкнути повідомлення на основному сайті, <a href="https://sky-clock.netlify.app/">увімкнути</a>.<br/>
-• Щоб отримувати повідомлення сайт повинен бути відкритий, або бути у вкладці. <br/>
-• Якщо ви не розумієте англійську мову, то можна використовувати перекладач. <a href="https://sky--clock-netlify-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=uk&_x_tr_hl=ru&_x_tr_pto=wapp">Google Translate</a>. (Повідомлення не будуть перекладатися)<br/>
+• Якщо ви не розумієте англійську мову, <a href="https://sky--clock-netlify-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=uk&_x_tr_hl=ru&_x_tr_pto=wapp">то можна використовувати перекладач</a>. (Повідомлення не будуть перекладатися)<br/>
 </p>
-<p>Це повідомлення з'являється один раз.</p>
+
 <a class="close" title="Закрити" onclick="document.getElementById('parent_popup').style.display='none';">X</a>
   </div>
 </div>
@@ -132,7 +143,7 @@ function getCookie(name) {
 
 function pop()
 {
-	var delay_popup = 1500;
+	var delay_popup = 2000;
 	setTimeout("document.getElementById('parent_popup').style.display='block'", delay_popup);
 }
 
@@ -148,6 +159,6 @@ pop();
 
 //-->
 </script>
-
+<div class = 'super1'></div>
 </body>
 </html>
