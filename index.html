@@ -8,6 +8,35 @@
 <meta name="keywords" content="Годинник - Sky: Діти Світла">
 <style>
 
+.uklonkon {
+  position: absolute;
+  z-index:  100;
+  top:      8px;
+  
+  width:    50px;
+  height:   50px;
+  
+/*  background: rgba(0, 0, 255, 0.5);*/
+}
+
+.gtr {
+  position: absolute;
+  z-index:  100;
+  top:      60px;
+  
+  width:    50px;
+  height:   50px;
+}
+
+.logo {
+  position: absolute;
+  z-index:  -1;
+  top:      8px;
+  
+  width:    50px;
+  height:   50px;
+}
+
 #ifua {
     position: absolute;
     top: 0;
@@ -30,16 +59,16 @@
 }
 #popup { 
   background: #fff;
-    width: 520px;
+    width: 349px;
     margin: 10% auto;
-	padding: 5px 20px 13px 20px;
+	padding: 2px 2px 2px 2px;
 	border: 10px solid #ddd;
 	position: relative;
-	/*--CSS3 CSS3 Тени для Блока--*/
+	/*--CSS3 CSS3 Тіні для Блоку--*/
 	-webkit-box-shadow: 0px 0px 20px #000;
 	-moz-box-shadow: 0px 0px 20px #000;
 	box-shadow: 0px 0px 20px #000;
-	/*--CSS3 Закругленные углы--*/
+	/*--CSS3 Закруглені кути--*/
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -133,7 +162,7 @@ function getCookie(name) {
 
 function pop()
 {
-	var delay_popup = 1500;
+	var delay_popup = 2000;
 	setTimeout("document.getElementById('parent_popup').style.display='block'", delay_popup);
 }
 
@@ -149,6 +178,8 @@ pop();
 
 //-->
 </script>
-
+<div class = 'logo'><img src="https://clock.skyd.pp.ua/favicon.ico" alt="Logo" width="50" height="50"></div>
+<div class = 'gtr'><a href="https://sky--clock-netlify-app.translate.goog/?_x_tr_sl=en&amp;_x_tr_tl=uk&amp;_x_tr_hl=ru&amp;_x_tr_pto=wapp" title="Google Translate"><img src="https://clock.skyd.pp.ua/skyd.pp.ua_Google-Translate.png" width="50" height="50" alt="Google Translate" /></a></div>
+<div class = 'uklonkon'><a href="https://clock.skyd.pp.ua/menu" title="Меню"><button type="button" style = "width: 50px; height:50px;"><img src="https://clock.skyd.pp.ua/Hamburger_icon.svg" alt="Menu" width="30" height="30"></button></a></div>
 </body>
 </html>
